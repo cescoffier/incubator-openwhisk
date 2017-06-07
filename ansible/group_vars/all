@@ -72,6 +72,16 @@ runtimesManifest:
       image:
         name: "java8action"
       default: true
+    vertx:
+    - kind: "vertx"
+      attached:
+         attachmentName: "jarfile"
+         attachmentType: "application/java-archive"
+      sentinelledLogs: false
+      requireMain: true
+      image:
+         name: "vertxaction"
+      default: true
   blackboxes:
     - name: "dockerskeleton"
 
